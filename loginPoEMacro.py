@@ -8,7 +8,7 @@ from pyautogui import ImageNotFoundException  # Importa a exceção
 # --- Configurações ---
 IMAGE_TO_FIND = "login.png"
 CONFIDENCE_LEVEL = 0.8  # 80% de certeza
-PRESS_INTERVAL = 0.25  # Espera APÓS pressionar ENTER (250ms)
+PRESS_INTERVAL = 0.1  # Espera APÓS pressionar ENTER (100ms)
 NO_IMAGE_INTERVAL = 1.0  # Espera se a imagem NÃO for encontrada (1s)
 MAX_RANDOM_DELAY = 0.2  # Valor máximo de atraso aleatório (0.2s)
 
