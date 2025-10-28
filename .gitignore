@@ -1,0 +1,14 @@
+# --- Ambiente Virtual ---
+# Ignora a pasta do ambiente virtual (ex: .venv, venv)
+.venv/
+venv/
+
+# --- Cache e Arquivos Compilados do Python ---
+# Ignora as pastas de cache
+__pycache__/
+*.pyc
+
+# Ignora outros arquivos compilados ou de sistema
+*.pyo
+*.pyd
+.DS_Store
