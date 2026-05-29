@@ -1,4 +1,4 @@
-f@echo off
+@echo off
 REM Este script deve ser executado como Administrador!
 
 REM 1. Ativa o ambiente virtual
