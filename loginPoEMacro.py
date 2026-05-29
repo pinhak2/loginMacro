@@ -16,11 +16,13 @@ SELECTED_GAME = "GAME2"
 # ==========================================
 GAMES_CONFIG = {
     "GAME1": {
+        "game_name": "Path of Exile",
         "image_file": "login.png",
         # (Left, Top, Width, Height)
         "region": (1170, 640, 180, 100),
     },
     "GAME2": {
+        "game_name": "Path of Exile 2",
         "image_file": "login_game2.png",  # Nome da imagem do segundo jogo
         # Coloquei a tela cheia por padrão, ajuste para otimizar
         "region": (885, 885, 1080, 940),
@@ -38,6 +40,7 @@ try:
     current_config = GAMES_CONFIG[SELECTED_GAME]
     IMAGE_TO_FIND = current_config["image_file"]
     SEARCH_REGION = current_config["region"]
+    GAME_NAME = current_config["game_name"]
 except KeyError:
     print(f"ERRO: O jogo '{SELECTED_GAME}' não existe no dicionário GAMES_CONFIG.")
     sys.exit()
@@ -45,11 +48,11 @@ except KeyError:
 # Ativa o Fail-Safe
 pyautogui.FAILSAFE = True
 
-print(f"Script iniciado para: {SELECTED_GAME}")
-print(f"Procurando imagem: {IMAGE_TO_FIND}")
-print(f"Região de busca: {SEARCH_REGION}")
+print("==========================================\n")
+print(f"Script iniciado para: {GAME_NAME}")
 print("Mova o mouse para o canto superior esquerdo para PARAR (Fail-Safe).")
 print("Pressione Ctrl+C no terminal para fechar.")
+print("\n==========================================")
 
 try:
     # Loop principal
